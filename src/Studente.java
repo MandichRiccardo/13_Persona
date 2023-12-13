@@ -22,7 +22,8 @@ public class Studente extends Persona{
         this.classe = classe;
     }
     public void iscrizione(){
-        this.scuola = Interazione.strput();
-        this.classe = classe;
+        iscrizione( Interazione.strput("in che scuola ti vuoi iscrivere?"),
+                    Interazione.strput("in che classe ti vuoi iscrivere?")
+                    );
     }
 }
